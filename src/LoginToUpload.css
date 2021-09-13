@@ -1,0 +1,9 @@
+.loginToUpload__box{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+

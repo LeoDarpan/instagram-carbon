@@ -1,0 +1,50 @@
+.postUpload__box{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+    z-index: 10;
+}
+
+.postUpload__box .main{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0px auto;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+}
+
+.postUpload__box .main #progress, .postUpload__box .main input{
+    margin-bottom: 15px;
+}
+
+.postUpload__box .main #progress{
+    width: 100%;
+    height: 20px;
+  }
+
+.postUpload__box .main input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.postUpload__box .main button{
+    background-color: white;
+    margin: 0 auto;
+    color: blue;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.postUpload__box .main button:hover{
+    color: white;
+    background-color: blue;
+}
+
+

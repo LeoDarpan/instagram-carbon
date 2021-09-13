@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app{
+  background-color: #fafafa;
+  height: auto;  
+}
+.app__header{
+  background-color: #fff;
+  padding: 20px;
+  object-fit: contain;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.app__headerImage{
+  width: 100px;
+  object-fit: contain;
+}
+.logos .logo__text{
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+  color: darkslategray;
+  position: relative;
+  top: -14px;
+  left: 16px;
+}
+.app__signup{
+  display: flex;
+  flex-direction: column;
+}
+.app__posts{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.app__postsRight{
+  margin-left: 20px;
+}
+.app__loginContainer{
+  padding: 5px 10px;
+}
+.app__loginContainer Button{
+  font-size: .8rem;
+  background-color: blue;
+  color: white;
+}
+.app__loginContainer Button:last-child{
+  margin-left: 5px;
+}
+.app__loginContainer Button:hover{
+  background-color: violet;
+  color: black;
+}
+.app__userCorner{
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.app__usernameShow{
+  display: inline-flex;
+  font-family: sans-serif;
+  align-items: center;
+  font-size: 20px;
+}
+.user__font{
+  font-family: cursive;
+  margin-left: 5px;
+  font-family: 'Pacifico', cursive;
+}
+.app__userCorner .logout__button{
+  background-color: tomato;
+  color: white;
+  margin-left: 5px;
+  font-weight: 600;
+}
+.app__userCorner .logout__button:hover{
+  background-color: lightgreen;
+  color: black;
+}
