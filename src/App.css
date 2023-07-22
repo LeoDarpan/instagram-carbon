@@ -11,7 +11,7 @@
 }
 .app__header{
   background-color: #fff;
-  padding: 20px;
+  padding: 10px 20px;
   object-fit: contain;
   border-bottom: 1px solid lightgray;
   display: flex;
@@ -29,9 +29,8 @@
   font-family: 'Pacifico', cursive;
   font-size: 22px;
   color: darkslategray;
-  position: relative;
-  top: -14px;
-  left: 16px;
+  text-align: center;
+  line-height: 1;
 }
 .app__signup{
   display: flex;
@@ -39,8 +38,12 @@
 }
 .app__posts{
   padding: 20px;
-  display: flex;
   justify-content: center;
+}
+.app__postsLeft {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 1rem;
 }
 .app__postsRight{
   margin-left: 20px;

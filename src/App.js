@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import './App.css'; 
 import logo from "./instagram-text.png";
 import logo1 from "./Carbon-Logo-For-Site-v2.png";
 import Post from './Post';
@@ -102,8 +102,8 @@ function App() {
   return (
     <div className="app">
         {/* -------Sign Up Modal-------*/}
-        <Modal open={open} onClose={() => setOpen(false)}>
-          <div style={modalStyle} className={classes.paper}>
+        <Modal open={ open } onClose={ () => setOpen(false) }>
+          <div style={ modalStyle } className={ classes.paper }>
             <form action="" className="app__signup">
               <center>
                 <img src={ logo } className="app__headerImage"/>
@@ -117,7 +117,7 @@ function App() {
         </Modal>
 
         {/* Signin Modal */}
-        <Modal open={openSignIn} onClose={() => setOpenSignIn(false)}>
+        <Modal open={ openSignIn } onClose={ () => setOpenSignIn(false) }>
           <div style={modalStyle} className={classes.paper}>
             <form action="" className="app__signup">
               <center>
@@ -161,13 +161,13 @@ function App() {
           {
             posts.map(({id, post}) => (
               user?.displayName ? (
-            <Post key={id} postId = {id} username={post.username} caption={post.caption} user={ user } imageUrl={post.imageUrl} />
+              <Post key={id} postId = {id} username={post.username} caption={post.caption} user={ user } imageUrl={post.imageUrl} />
             ): (
               <Post key={id} postId = {id} username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
             )))
           }
         </div> 
-        <div className="app__postsRight">
+        {/* <div className="app__postsRight"> */}
         {/* <InstagramEmbed
           url='https://www.instagram.com/p/CNYz8kQBfKH/?utm_medium=copy_link'
           clientAccessToken='123|456'
@@ -181,7 +181,7 @@ function App() {
           onAfterRender={() => {}}
           onFailure={() => {}}
         /> */}
-        </div> 
+        {/* </div>  */}
       </div>
       {/* Upload Post Component */}
         {/* Loaded with a Caption Input, File Picker, Progress Bar and Post Button */}
@@ -193,7 +193,6 @@ function App() {
             <LoginToUpload />
           )
         }
-      
     </div>  
   )
 }

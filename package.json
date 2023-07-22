@@ -7,18 +7,29 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
     "firebase": "^8.10.0",
+    "path-browserify": "^1.0.1",
+    "querystring-es3": "^0.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-instagram-embed": "^3.0.0",
-    "react-scripts": "4.0.1",
+    "react-scripts": "^5.0.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.1",
+    "util": "^0.12.5",
     "web-vitals": "^1.1.2"
   },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "@latest"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start  --openssl-legacy-provider start",
+    "build": "react-scripts build  --openssl-legacy-provider start",
+    "test": "react-scripts test  --openssl-legacy-provider start",
+    "eject": "react-scripts eject  --openssl-legacy-provider start"
   },
   "eslintConfig": {
     "extends": [
